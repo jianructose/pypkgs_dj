@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pypkgs_dj"
 version = "0.1.0"
-description = "This is the initial step of creating a toy Python package."
+description = "Python package that eases the pain of concatenating Pandas categoricals again!"
 authors = ["Jianru D <dengjr1509@gmail.com>"]
 license = "MIT"
 
@@ -13,6 +13,8 @@ pandas = "^1.2.2"
 Sphinx = "^3.5.1"
 sphinxcontrib-napoleon = "^0.7"
 pytest = "^6.2.2"
+pytest-cov = "^2.11.1"
+codecov = "^2.1.11"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
