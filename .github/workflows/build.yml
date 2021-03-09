@@ -16,7 +16,7 @@ jobs:
         pip install poetry
         poetry install
     - name: Test with pytest
-      run: 
+      run: |
         poetry run pytest --cov=./ --cov-report=xml
     - name: Upload coverage to Codecov  
       uses: codecov/codecov-action@v1
@@ -26,7 +26,3 @@ jobs:
         flags: unittests
         name: codecov-umbrella
         fail_ci_if_error: true
-    
-    
-    
-      run: poetry run pytest
